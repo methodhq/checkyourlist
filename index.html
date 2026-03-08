@@ -1,55 +1,196 @@
-<div class="grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your List</title>
 
-    <div class="card">
-        <div class="card-content">
-            <a href="pdfs/tax-documents-checklist.pdf" target="_blank">
-                <strong>[ TAX DOCUMENTS ]</strong>
-            </a>
-            <div class="price">$4.99</div>
-        </div>
+    <style>
+        /* Brand Font for Cards */
+        @font-face {
+            font-family: "Bahnschrift";
+            src: local("Bahnschrift SemiBold SemiConden"),
+                 local("Bahnschrift");
+            font-weight: 600;
+        }
+
+        /* Global Layout */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 60px;
+            background: #e6e6e6;
+            color: #111111;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo-container {
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        /* Hero */
+        .hero-title {
+            font-size: 38px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #555555;
+            letter-spacing: 0.5px;
+            margin-bottom: 50px;
+        }
+
+        /* Section Header */
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+        }
+
+        /* Grid Layout — 3 rectangles per row */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Rectangle Card Style */
+        .card {
+            background: #FFFFFF;
+            border: 2px solid #111111;
+            border-radius: 0;
+            transition: background 0.2s ease, border-color 0.2s ease;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 70px; /* shorter rectangle */
+            padding: 10px;
+        }
+
+        .card:hover {
+            background: #F7F7F7;
+            border-color: #000000;
+        }
+
+        .card a {
+            font-family: "Bahnschrift", sans-serif;
+            font-weight: 700; /* bold */
+            text-decoration: none;
+            color: #111111;
+            letter-spacing: 0.5px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        /* Price + Coming Soon styling */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .price {
+            font-size: 14px;
+            color: #111;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .coming-soon {
+            font-size: 13px;
+            color: #777;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="Lo.png" alt="Check Your List Logo" class="logo">
     </div>
 
-    <div class="card">
-        <div class="card-content">
-            <a href="pdfs/citizenship-application-checklist.pdf" target="_blank">
-                <strong>[ CITIZENSHIP APPLICATION ]</strong>
-            </a>
-            <div class="price">$4.99</div>
+    <!-- Hero -->
+    <div class="hero-title">[ CHECK YOUR LIST ]</div>
+    <div class="tagline">Check your list. And done.</div>
+
+    <!-- Section Header -->
+    <h2>[ PDF CHECKLISTS ]</h2>
+
+    <!-- Checklist Grid -->
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-content">
+                <a href="pdfs/tax-documents-checklist.pdf" target="_blank">
+                    <strong>[ TAX DOCUMENTS ]</strong>
+                </a>
+                <div class="price">$4.99</div>
+            </div>
         </div>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="pdfs/citizenship-application-checklist.pdf" target="_blank">
+                    <strong>[ CITIZENSHIP APPLICATION ]</strong>
+                </a>
+                <div class="price">$4.99</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="pdfs/passport-application-checklist.pdf" target="_blank">
+                    <strong>[ PASSPORT APPLICATION ]</strong>
+                </a>
+                <div class="price">$4.99</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="pdfs/pr-application-checklist.pdf" target="_blank">
+                    <strong>[ PR APPLICATION ]</strong>
+                </a>
+                <div class="price">$4.99</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="pdfs/self-employed-tax-checklist.pdf" target="_blank">
+                    <strong>[ SELF‑EMPLOYED TAX ]</strong>
+                </a>
+                <div class="price">$4.99</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <strong>[ NEXUS APPLICATION ]</strong>
+                <div class="coming-soon">Coming Soon</div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="card">
-        <div class="card-content">
-            <a href="pdfs/passport-application-checklist.pdf" target="_blank">
-                <strong>[ PASSPORT APPLICATION ]</strong>
-            </a>
-            <div class="price">$4.99</div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-content">
-            <a href="pdfs/pr-application-checklist.pdf" target="_blank">
-                <strong>[ PR APPLICATION ]</strong>
-            </a>
-            <div class="price">$4.99</div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-content">
-            <a href="pdfs/self-employed-tax-checklist.pdf" target="_blank">
-                <strong>[ SELF‑EMPLOYED TAX ]</strong>
-            </a>
-            <div class="price">$4.99</div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-content">
-            <strong>[ NEXUS APPLICATION ]</strong>
-            <div class="coming-soon">Coming Soon</div>
-        </div>
-    </div>
-
-</div>
+</body>
+</html>
