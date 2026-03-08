@@ -68,13 +68,18 @@
         }
 
         /* Card Style */
-        .card {
-            background: #FFFFFF;
-            border: 2px solid #111111; /* squared, strong border */
-            padding: 24px;
-            border-radius: 0; /* squared off */
-            transition: background 0.2s ease, border-color 0.2s ease;
-        }
+       .card {
+    background: #FFFFFF;
+    border: 2px solid #111111;
+    padding: 24px;
+    border-radius: 0;
+    transition: background 0.2s ease, border-color 0.2s ease;
+
+    display: flex;               /* enables flexbox */
+    justify-content: center;     /* horizontal centering */
+    align-items: center;         /* vertical centering */
+    height: 120px;               /* fixed height for perfect centering */
+}
 
         .card:hover {
             background: #F7F7F7;
@@ -132,5 +137,6 @@
 
 </body>
 </html>
+
 
 
