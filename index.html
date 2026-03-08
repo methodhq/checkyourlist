@@ -19,7 +19,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 60px;
-            background: #e6e6e6; /* soft gray brand background */
+            background: #e6e6e6; /* updated background */
             color: #111111;
             line-height: 1.6;
             text-align: center;
@@ -31,7 +31,7 @@
         }
 
         .logo {
-            width: 200px;
+            width: 200px; /* larger logo */
             height: auto;
         }
 
@@ -61,25 +61,27 @@
         /* Grid Layout */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             max-width: 900px;
             margin: 0 auto;
         }
 
         /* Card Style */
-       .card {
-    background: #FFFFFF;
-    border: 2px solid #111111;
-    padding: 16px;
-    border-radius: 0;
-    transition: background 0.2s ease, border-color 0.2s ease;
+        .card {
+            background: #FFFFFF;
+            border: 2px solid #111111;
+            border-radius: 0;
+            transition: background 0.2s ease, border-color 0.2s ease;
 
-    display: flex;               /* enables flexbox */
-    justify-content: center;     /* horizontal centering */
-    align-items: center;         /* vertical centering */
-    height: 120px;               /* fixed height for perfect centering */
-}
+            /* Center content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 90px; /* smaller square */
+            padding: 10px;
+        }
 
         .card:hover {
             background: #F7F7F7;
@@ -92,8 +94,7 @@
             text-decoration: none;
             color: #111111;
             letter-spacing: 0.5px;
-            font-size: 17px;
-            display: block;
+            font-size: 15px;
             text-transform: uppercase;
         }
 
@@ -115,7 +116,7 @@
 
     <!-- Hero -->
     <div class="hero-title">[ CHECK YOUR LIST ]</div>
-    
+    <div class="tagline">Check your list. And done.</div>
 
     <!-- Section Header -->
     <h2>[ PDF CHECKLISTS ]</h2>
@@ -124,24 +125,4 @@
     <div class="grid">
         <div class="card"><a href="pdfs/tax-documents-checklist.pdf">[ TAX DOCUMENTS ]</a></div>
         <div class="card"><a href="pdfs/citizenship-application-checklist.pdf">[ CITIZENSHIP APPLICATION ]</a></div>
-        <div class="card"><a href="pdfs/passport-application-checklist.pdf">[ PASSPORT APPLICATION ]</a></div>
-        <div class="card"><a href="pdfs/pr-application-checklist.pdf">[ PR APPLICATION ]</a></div>
-        <div class="card"><a href="pdfs/self-employed-tax-checklist.pdf">[ SELF‑EMPLOYED TAX ]</a></div>
-        <div class="card"><a href="pdfs/nexus-application-checklist.pdf">[ NEXUS APPLICATION ]</a></div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        © CheckYourList
-    </footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
+        <div class="card"><a href="pdfs/passport-application-checklist.pdf">[ PASSPORT APPLICATION
