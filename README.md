@@ -24,7 +24,7 @@ checkyourlist will also include simple, everyday checklists for moments when you
 These will follow the same minimalist, stress‑free format.
 
 ## Live site
-https://checkyourlist.github.io/checkyourlist/
+https://methodhq.github.io/checkyourlist/
 
 ## Purpose
 checkyourlist helps everyone complete paperwork and everyday tasks with confidence — no clutter, no overwhelm. Just check your list. And done.
